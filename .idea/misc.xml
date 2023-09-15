@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Osken/AndroidStudioProjects/TodoApp/app/src/main/res/drawable/ic_baseline_list_alt_24.xml" value="0.244" />
         <entry key="..\:/Users/Osken/AndroidStudioProjects/TodoApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Osken/AndroidStudioProjects/TodoApp/app/src/main/res/layout/fragment_tasks.xml" value="0.22" />
+        <entry key="..\:/Users/Osken/AndroidStudioProjects/TodoApp/app/src/main/res/layout/fragment_tasks.xml" value="0.33" />
+        <entry key="..\:/Users/Osken/AndroidStudioProjects/TodoApp/app/src/main/res/layout/task_item.xml" value="0.33" />
         <entry key="..\:/Users/Osken/AndroidStudioProjects/TodoApp/app/src/main/res/menu/menu.xml" value="0.34375" />
       </map>
     </option>
