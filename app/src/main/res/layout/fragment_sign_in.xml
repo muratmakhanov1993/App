@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    tools:context=".authorization.screens.SignInFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/muller_bold"
+        android:paddingStart="16dp"
+        android:text="Login"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            app:cardCornerRadius="10dp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/muller_regular"
+            android:hint="Email"
+            android:paddingStart="8dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_eye"
+                android:fontFamily="@font/muller_regular"
+                android:hint="Пароль"
+                android:paddingStart="8dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="Забыл пароль ?"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:padding="10dp"
+        android:paddingStart="86dp"
+        android:text="Нет аккаунта?"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:paddingEnd="120dp"
+        android:text="Создать аккаунт"
+        android:textColor="@color/purple_700" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/main_btn_bg"
+        android:fontFamily="@font/muller_regular"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="kz.decode.todoapp.main.screens.tasks.bottom_sheet.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_tasksFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_tasksFragment_to_changeTaskStatusDialogFragment"
+            app:destination="@id/changeTaskStatusDialogFragment" />
+        <action
+            android:id="@+id/action_tasksFragment_to_newTasksFragment"
+            app:destination="@id/newTasksFragment" />
+        <action
+            android:id="@+id/action_tasksFragment_to_changeStatusFragment"
+            app:destination="@id/changeStatusFragment" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/changeTaskStatusDialogFragment"
+        android:name="kz.decode.todoapp.main.screens.tasks.bottom_sheet.ChangeTaskStatusDialogFragment"
+        android:label="ChangeTaskStatusDialogFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="kz.decode.todoapp.main.screens.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+
+        <action
+            android:id="@+id/action_profileFragment_to_exitProfileFragment"
+            app:destination="@id/exitProfile" />
+    </fragment>
+
+    <dialog android:id="@+id/exitProfile"
+        android:name="kz.decode.todoapp.ExitProfileFragment"
+        />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="kz.decode.todoapp.main.screens.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTasksFragment"
+        android:name="kz.decode.todoapp.main.screens.tasks.NewTasksFragment"
+        android:label="fragment_new_tasks"
+        tools:layout="@layout/fragment_new_tasks" >
+        <action
+            android:id="@+id/action_newTasksFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/changeStatusFragment"
+        android:name="kz.decode.todoapp.ChangeStatusFragment"
+        android:label="ChangeStatusFragment" >
+
+        <argument app:argType="string"
+            android:name="taskId"
+            />
+
+        <action
+            android:id="@+id/action_changeStatusFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+    </dialog>
+
+</navigation>

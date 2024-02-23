@@ -47,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Задача №1:В работе"
+                android:fontFamily="@font/muller_bold"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -54,6 +55,7 @@
                 android:id="@+id/tv_task_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/muller_bold"
                 android:text="15 Сентября - 24 Сентября"
                 android:textColor="#706D6D"
                 android:textSize="12sp" />

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050289763587",
+    "project_id": "decodetodoapp-4f2d3",
+    "storage_bucket": "decodetodoapp-4f2d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050289763587:android:1db80cc6128b8baf8d2536",
+        "android_client_info": {
+          "package_name": "kz.decode.todoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-vFaDD1F170S7whKULQJsYP8K_oqWR_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

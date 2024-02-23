@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_style">
+
+    <View
+        android:layout_width="60sp"
+        android:layout_height="8dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10sp"
+        android:background="@color/teal_700" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/btn_to_do"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_700"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_list_alt_24"
+            app:tint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/orange"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_do_task"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_make"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/btn_done"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_check"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:paddingStart="36dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To do"
+            android:textColor="@color/purple_700"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In progress"
+            android:paddingStart="36dp"
+            android:textColor="@color/orange"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testing"
+            android:paddingStart="23dp"
+            android:textColor="@color/purple_500"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:paddingStart="36dp"
+            android:textColor="@color/green"
+
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/main_bt_bg2"
+        android:fontFamily="@font/muller_medium"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="Delete task"
+        android:textAllCaps="false"
+        android:textColor="#FD4242"
+        android:textSize="20sp" />
+
+</FrameLayout>

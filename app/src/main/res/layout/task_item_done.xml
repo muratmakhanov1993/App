@@ -29,8 +29,7 @@
                 android:background="@color/green"
                 android:padding="10dp"
                 android:src="@drawable/ic_check"
-                app:tint="@color/white"
-                />
+                app:tint="@color/white" />
 
         </androidx.cardview.widget.CardView>
 
@@ -46,6 +45,7 @@
                 android:id="@+id/tv_task_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/muller_bold"
                 android:text="Задача №1 Готово"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
@@ -54,6 +54,7 @@
                 android:id="@+id/tv_task_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/muller_bold"
                 android:text="8 Сентября"
                 android:textColor="#706D6D"
                 android:textSize="12sp" />

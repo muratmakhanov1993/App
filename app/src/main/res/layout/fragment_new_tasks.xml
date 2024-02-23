@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.screens.profile.EditProfileFragment">
+
+    <ImageView
+        android:id="@+id/ic_arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/muller_bold"
+        android:paddingStart="16dp"
+        android:text="New task"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/muller_bold"
+        android:paddingStart="16dp"
+        android:text="Name"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/muller_regular"
+        android:hint="Name task"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/muller_bold"
+        android:paddingStart="8dp"
+        android:paddingTop="24dp"
+        android:text="Description"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/muller_regular"
+        android:hint="Description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/muller_bold"
+        android:paddingStart="8dp"
+        android:paddingTop="24dp"
+        android:text="Date"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/muller_regular"
+        android:hint="Date"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/main_btn_bg"
+            android:fontFamily="@font/muller_bold"
+            android:text="Add task"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
+
